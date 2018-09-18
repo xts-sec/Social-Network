@@ -1,0 +1,11 @@
+body {
+	height: 100%;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+  font-size: 3rem;
+}
+input {
+  font-size: 3rem;
+  margin: 5px;
+}
