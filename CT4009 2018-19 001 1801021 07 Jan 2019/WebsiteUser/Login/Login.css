@@ -2,10 +2,16 @@ body {
 	height: 100%;
 	margin: 0;
 	text-align: center;
+  color: white;
+  background-color: deepskyblue;
 	width: 100%;
   font-size: 3rem;
 }
 input {
+  font-size: 3rem;
+  margin: 5px;
+}
+button {
   font-size: 3rem;
   margin: 5px;
 }
