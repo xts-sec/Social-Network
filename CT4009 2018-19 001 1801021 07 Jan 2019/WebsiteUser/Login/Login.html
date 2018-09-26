@@ -22,9 +22,10 @@ The input objects create text boxes. the placeholder attributes create the text 
 those boxes before the user types in them, and informs the user what they are for. -->
 <form method="post">
   <h1>Login with Email</h1>
-  <input placeholder="Email" type="text" name="Email" value=""><br>
-  <input placeholder="Password" type="password" name="Password" value=""><br><br>
-  <a href="../CreateWallPost/CreateWallPost.html"><button type="button">Login</button></a>
+  <input placeholder="Email" type="email" name="Email" value="" required><br>
+  <input placeholder="Password" type="password" name="Password" value="" required><br><br>
+  <a href="../CreateWallPost/CreateWallPost.html"><input type="button" name="Login" value="Login"></a>
+
 </form>
 <h6><a href="../Register/Register.html">Don't have an account? Click here to Register</a></h6>
 </body>
