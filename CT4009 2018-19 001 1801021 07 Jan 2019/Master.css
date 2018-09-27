@@ -1,6 +1,7 @@
 body {
   /*changes the font to sans-serif for the entire site */
   font-family: sans-serif;
+  background-color: deepskyblue;
 }
 
 h1 {
@@ -24,6 +25,8 @@ h1 {
   overflow: hidden;
   /* sets the background color for list elements to #333 (dark grey) */
   background-color: #333;
+
+  border: 4px solid #333;
 }
 
 .nav li {
@@ -49,7 +52,8 @@ h1 {
   background-color: #111;
 }
 
-.nav li.active {
+.nav li.active a {
   /* Change the link color to deepskyblue on click */
   background-color: deepskyblue;
+  color: black;
 }

@@ -1,10 +1,14 @@
+body {
+  background-color: deepskyblue;
+}
+
+
 .profile {
   border: 3px solid #333;
   background-color: deepskyblue;
   text-align: left;
   margin-top: 5px;
   padding: 5px;
-  width: 175;
   position: fixed;
   height: auto;
   overflow: auto;
