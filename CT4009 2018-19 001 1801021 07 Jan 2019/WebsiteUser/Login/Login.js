@@ -1,18 +1,18 @@
 //array containing user objects
 var users = [
     {
-    username: "test@test.com",
-    password: "password"
-    },
-    {
-    username: "me@me.co",
-    password: "mypass"
+      FirstName: "Matt",
+      LastName: "Cocklin",
+      Country: "England",
+      Age: "18",
+      Email: "mnc2603@gmail.com",
+      Password: "testpass"
     }
 ]
 
 //function to authenticate users
 function Authenticate(){
-    
+
     var loginEmail = document.getElementById("Email")
     var loginPassword = document.getElementById("Password")
     //debug
@@ -23,7 +23,7 @@ function Authenticate(){
         //debug
         //console.log(users[i].username)
         //console.log(users[i].password)
-        if ((loginEmail.value == users[i].username) && (loginPassword.value == users[i].password)){
+        if ((loginEmail.value == users[i].Email) && (loginPassword.value == users[i].Password)){
             alert("logging in")
             window.location.href = "../CreateWallPost/CreateWallPost.html"
             return true
