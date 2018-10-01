@@ -21,12 +21,12 @@ rather than the get method because the post method is more secure and does not d
 the input data in plaintext. Since the input data includes passwords, this is important.
 The input objects create text boxes. the placeholder attributes create the text within
 those boxes before the user types in them, and informs the user what they are for. -->
-<form method="post" >
+<form id="login" method="post" >
 
   <h1>Login with Email</h1>
   <input placeholder="Email" type="email" id="Email" required><br>
   <input placeholder="Password" type="password" id="Password" required><br><br>
-  <input type="button" name="Login" value="Login" onclick="return Authenticate()">
+  <input type="button" id="btnLogin" value="Login" onclick="Authenticate()">
 
 </form>
 <h6><a href="../Register/Register.html">Don't have an account? Click here to Register</a></h6>
