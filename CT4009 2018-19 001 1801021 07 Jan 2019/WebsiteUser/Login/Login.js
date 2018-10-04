@@ -1,20 +1,10 @@
-//array containing user objects
-var users = [
-    {
-      FirstName: "Matt",
-      LastName: "Cocklin",
-      Country: "England",
-      Age: "18",
-      Email: "mnc2603@gmail.com",
-      Password: "testpass"
-    }
-]
-
 //function to authenticate users
 function Authenticate(){
+  //gets user object array from local storage
+    var users = JSON.parse(localStorage.getItem("users"))
 
-    var loginEmail = document.getElementById("Email")
-    var loginPassword = document.getElementById("Password")
+    var loginEmail = document.getElementById("Email").value
+    var loginPassword = document.getElementById("Password").value
     //debug
     //console.log(loginEmail.value)
     //console.log(loginPassword.value)
@@ -23,7 +13,7 @@ function Authenticate(){
         //debug
         //console.log(users[i].username)
         //console.log(users[i].password)
-        if ((loginEmail.value == users[i].Email) && (loginPassword.value == users[i].Password)){
+        if ((loginEmail == users[i].Email) && (loginPassword == users[i].Password)){
             alert("logging in")
             window.location.href = "../CreateWallPost/CreateWallPost.html"
             return true

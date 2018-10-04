@@ -10,6 +10,8 @@
 
   <link rel="stylesheet" href="../../Master.css">
   <link rel="stylesheet" href="Register.css">
+  <script src="Register.js" charset="utf-8"></script>
+
 
 </head>
 
@@ -17,14 +19,14 @@
 
   <form method="post">
     <h1>Register with Email, It's free!</h1><br/>
-    <input placeholder="First name" type="text" name="FirstName" value="" required><br>
-    <input placeholder="Last name" type="text" name="LastName" value="" required><br>
-    <input placeholder="Country" type="text" name="Country" value="" required><br>
-    <input placeholder="Age" type="number" name="Age" value="" required><br>
-    <input placeholder="Email" type="email" name="Email" value="" required><br>
-    <input placeholder="Password" type="password" name="Password" value="" required><br>
-    <input placeholder="Confirm Password" type="password" name="ConfirmPassword" value="" required><br><br>
-    <a href="../CreateWallPost/CreateWallPost.html"><input type="button" name="Register" value="Register"></a>
+    <input placeholder="FirstName" type="text" id="FirstName" required><br>
+    <input placeholder="LastName" type="text" id="LastName" required><br>
+    <input placeholder="Country" type="text" id="Country" required><br>
+    <input placeholder="Age" type="number" id="Age" required><br>
+    <input placeholder="Email" type="email" id="Email" required><br>
+    <input placeholder="Password" type="password" id="Password" required><br>
+    <input placeholder="ConfirmPassword" type="password" id="ConfirmPassword" required><br><br>
+    <input type="button" id="btnRegister" value="Register" onclick="RegisterUser()"></a>
   </form>
   <h6>Already have an account? <a href="../Login/Login.html">Log in</a></h6>
 
