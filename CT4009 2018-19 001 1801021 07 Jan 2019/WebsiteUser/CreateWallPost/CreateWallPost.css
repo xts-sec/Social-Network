@@ -19,3 +19,57 @@
 .profile ul li {
   padding: 3px;
 }
+
+.CreatePost {
+  text-align: left;
+  margin: 5px;
+  padding: 5px;
+  height: auto;
+  overflow: auto;
+  border: 3px solid #333;
+  width: 75%;
+}
+
+.CreatePost textarea {
+  width: 95%;
+  resize: none;
+  font-family: sans-serif;
+}
+
+.CreatePost ul {
+  list-style-type: none;
+}
+
+.CreatePost input {
+  font-size: 1.5rem;
+}
+
+.Post {
+  text-align: left;
+  margin: 5px;
+  padding: 5px;
+  height: auto;
+  overflow: auto;
+  border: 3px solid #333;
+  width: 75%;
+}
+
+.Post ul {
+  list-style-type: none;
+}
+
+.Post input {
+  font-family: sans-serif;
+}
+
+.page ul {
+  list-style-type: none;
+  display: block;
+}
+
+.page img {
+  border: 1px solid #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}

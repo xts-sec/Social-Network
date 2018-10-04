@@ -6,7 +6,11 @@ body {
 
 h1 {
   /*sets h1 text color to purple*/
-  color: purple;
+  color: deepskyblue;
+}
+
+a {
+  color: deepskyblue;
 }
 
 .nav {
