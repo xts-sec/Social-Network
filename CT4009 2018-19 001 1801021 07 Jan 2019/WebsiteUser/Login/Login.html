@@ -1,34 +1,24 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
 
-  <title>Login</title>
-  <meta name="description" content="Allows users to login to the site">
-  <meta name="author" content="Matt Cocklin">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <meta name="description" content="Allows users to login to the site">
+    <meta name="author" content="Matt Cocklin">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" charset="utf-8"></script>
+  </head>
 
-  <link rel="stylesheet" type="text/css" href="../../Master.css">
-  <link rel="stylesheet" href="login.css">
-  <script src="login.js" charset="utf-8"></script>
+  <body>
+    <form id="frmlogin" method="post" >
+      <h1>Login with Email</h1>
+      <input placeholder="Email" type="email" id="txtEmail" required><br>
+      <input placeholder="Password" type="password" id="txtPassword" required><br><br>
+      <input type="button" id="btnLogin" value="Login" onclick="login()">
+    </form>
+    <h6>Don't have an account? <a href="../Register/Register.html">Register</a></h6>
+  </body>
 
-</head>
-
-<body>
-
-<!-- This is a form, which takes multiple inputs. This form uses the post method
-rather than the get method because the post method is more secure and does not display
-the input data in plaintext. Since the input data includes passwords, this is important.
-The input objects create text boxes. the placeholder attributes create the text within
-those boxes before the user types in them, and informs the user what they are for. -->
-<form id="login" method="post" >
-
-  <h1>Login with Email</h1>
-  <input placeholder="Email" type="email" id="Email" required><br>
-  <input placeholder="Password" type="password" id="Password" required><br><br>
-  <input type="button" id="btnLogin" value="Login" onclick="Authenticate()">
-
-</form>
-<h6><a href="../Register/Register.html">Don't have an account? Click here to Register</a></h6>
-</body>
 </html>

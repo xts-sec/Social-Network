@@ -1,80 +1,53 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
+    <title>Create Wall Post</title>
+    <meta name="description" content="Allows users to create posts for their wall">
+    <meta name="author" content="Matt Cocklin">
+    <link rel="stylesheet" href="CreateWallPost.css">
+  </head>
 
-  <title>Create Wall Post</title>
-  <meta name="description" content="Allows users to create posts for their wall">
-  <meta name="author" content="Matt Cocklin">
+  <body>
 
-  <link rel="stylesheet" href="../../Master.css">
-  <link rel="stylesheet" href="CreateWallPost.css">
+      <div class=nav>
+        <ul>
+          <li class = active><a href="../CreateWallPost/CreateWallPost.html">Create Post</a></li>
+          <li><a href="../Message/Message.html">Message</a></li>
+          <li><a href="../BlockReport/BlockReport.html">Block / Report</a></li>
+          <li style="float:right"><a href="../Login/Login.html">Log Out</a></li>
+        </ul>
+      </div>
 
-</head>
+      <div class=profile>
+        <ul>
+          <li><img src="https://tinyurl.com/yc2bogxa" height="175" width="175"</li>
+          <li><input type="button" id="SelectPP" value="Upload new profile picture"></li>
+          <li>Matt Cocklin</li>
+          <li>mnc2603@gmail.com</li>
+          <li>18</li>
+          <li>England</li>
+          <li><a href="">View Friends</a></li>
+        </ul>
+      </div>
 
-<body>
-
-  <!--
-  -This is the nav bar, which allows users to reach the different pages of the site.
-  -The active class indicates which screen the user is already on within the nav bar.
-  -CSS is used to change the appearance of the active page.
-  -the nav division tells the browser to use a certain part from the css file when
-  presenting this section of the document.
-  -the <a> tag is used to create hyperlinks within the nav bar changing the active page.
- -->
-    <div class=nav>
-      <ul>
-        <li class = active><a href="../CreateWallPost/CreateWallPost.html">Create Post</a></li>
-        <li><a href="../Message/Message.html">Message</a></li>
-        <li><a href="../BlockReport/BlockReport.html">Block / Report</a></li>
-        <li style="float:right"><a href="../Login/Login.html">Log Out</a></li>
-      </ul>
+      <div class="page" style="margin-left: 200px;">
+        <div class="CreatePost">
+          <ul>
+            <li><h1>Write a post...</h1></li>
+            <li><textarea rows=5 placeholder="Write your post here..."></textarea></li>
+            <li><input type="button" id="btnPost" value="post"></li>
+          </ul>
+        </div>
+        <hr>
+            <div class="Post">
+              <ul>
+                <li><img src="https://tinyurl.com/yc2bogxa" height="25px" width="25px"> Matt Cocklin </li>
+                <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></li>
+                <li><input type="button" id="btnlike" value="Like"></li>
+            </div>
     </div>
-
-    <div class=profile>
-      <ul>
-        <li><img src="https://tinyurl.com/yc2bogxa" height="175" width="175"</li>
-        <li><input type="button" id="SelectPP" value="Upload new profile picture"></li>
-        <li>Matt Cocklin</li>
-        <li>mnc2603@gmail.com</li>
-        <li>18</li>
-        <li>England</li>
-        <li><a href="">View Friends</a></li>
-      </ul>
-
-    </div>
-
-    <div class="page" style="margin-left: 200px;">
-      <ul>
-        <li>
-          <div class="CreatePost">
-            <ul>
-              <li><h1>Write a post...</h1></li>
-              <li><textarea rows=5 placeholder="Write your post here..."></textarea></li>
-              <li><input type="button" id="btnPost" value="post"></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-      <hr>
-      <ul>
-        <li>
-          <div class="Post">
-            <ul>
-              <li><img src="https://tinyurl.com/yc2bogxa" height="25px" width="25px"> Matt Cocklin </li>
-              <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></li>
-              <li><input type="button" id="btnlike" value="Like"></li>
-            </ul>
-          </div>
-        </li>
-
-
-
-
-
-  </div>
-
-</body>
+  </body>
 
 </html>

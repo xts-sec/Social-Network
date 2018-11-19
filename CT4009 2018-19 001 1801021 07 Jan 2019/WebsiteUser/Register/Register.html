@@ -1,34 +1,29 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
 
-  <title></title>
-  <meta name="description" content="">
-  <meta name="author" content="Matt Cocklin">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="author" content="Matt Cocklin">
+    <link rel="stylesheet" href="Register.css">
+    <script src="Register.js" charset="utf-8"></script>
+  </head>
 
-  <link rel="stylesheet" href="../../Master.css">
-  <link rel="stylesheet" href="Register.css">
-  <script src="Register.js" charset="utf-8"></script>
+  <body>
+    <form id="frmLogin" method="post">
+      <h1>Register with Email, It's free!</h1><br/>
+      <input placeholder="FirstName" type="text" id="txtFirstName" required><br>
+      <input placeholder="LastName" type="text" id="txtLastName" required><br>
+      <input placeholder="Country" type="text" id="txtCountry" required><br>
+      <input placeholder="Age" type="number" id="numAge" required><br>
+      <input placeholder="Email" type="email" id="txtEmail" required><br>
+      <input placeholder="Password" type="password" id="txtPassword" required><br>
+      <input placeholder="ConfirmPassword" type="password" id="txtConfirmPassword" required><br><br>
+      <input type="button" id="btnRegister" value="Register" onclick="register()"></a>
+    </form>
+    <h6>Already have an account? <a href="../Login/Login.html">Log in</a></h6>
+  </body>
 
-
-</head>
-
-<body>
-
-  <form method="post">
-    <h1>Register with Email, It's free!</h1><br/>
-    <input placeholder="FirstName" type="text" id="FirstName" required><br>
-    <input placeholder="LastName" type="text" id="LastName" required><br>
-    <input placeholder="Country" type="text" id="Country" required><br>
-    <input placeholder="Age" type="number" id="Age" required><br>
-    <input placeholder="Email" type="email" id="Email" required><br>
-    <input placeholder="Password" type="password" id="Password" required><br>
-    <input placeholder="ConfirmPassword" type="password" id="ConfirmPassword" required><br><br>
-    <input type="button" id="btnRegister" value="Register" onclick="RegisterUser()"></a>
-  </form>
-  <h6>Already have an account? <a href="../Login/Login.html">Log in</a></h6>
-
-</body>
 </html>

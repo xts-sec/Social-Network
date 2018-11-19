@@ -1,18 +1,15 @@
-body {
-	/*sets the height to be 100% */
-	height: 100%;
-	/*sets the width to be 100% */
-	width: 100%;
-	/*removes the margin */
-	margin: 0;
-	/*alligns the text to the center */
+body{
 	text-align: center;
-	/*sets the font size of text in the body to 1rem */
-  font-size: 2rem;
+	font-size: 2rem;
 }
-input {
-	/*sets the font size of inputs to 1rem */
-  font-size: 2rem;
-	/*sets the margin size to 5px */
-  margin: 5px;
+input{
+	font-size: 2rem;
+	margin: 5px;
+}
+input button{
+	font-weight: bold;
+}
+
+h1, h6 {
+	color: deepskyblue;
 }
