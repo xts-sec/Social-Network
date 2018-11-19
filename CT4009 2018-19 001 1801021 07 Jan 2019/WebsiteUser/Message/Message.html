@@ -1,46 +1,28 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
 
-  <title>Message</title>
-  <meta name="description" content="Allows users to directly message other users">
-  <meta name="author" content="Matt Cocklin">
+  <head>
+    <meta charset="utf-8">
+    <title>Message</title>
+    <meta name="description" content="Allows users to send messages to other users">
+    <meta name="author" content="Matt Cocklin">
+    <link rel="stylesheet" href="Message.css">
+  </head>
 
-  <link rel="stylesheet" href="../../Master.css">
+  <body>
 
-</head>
-
-<body>
-
-  <!--
-  -This is the nav bar, which allows users to reach the different pages of the site.
-  -The active class indicates which screen the user is already on within the nav bar.
-  -CSS is used to change the appearance of the active page.
-  -the nav division tells the browser to use a certain part from the css file when
-  presenting this section of the document.
-  -the <a> tag is used to create hyperlinks within the nav bar changing the active page.
- -->
-    <div class=nav>
+    <div class="nav">
       <ul>
         <li><a href="../CreateWallPost/CreateWallPost.html">Create Post</a></li>
-        <li class = active><a href="../Message/Message.html">Message</a></li>
+        <li><a href="../Message/Message.html">Message</a></li>
         <li><a href="../BlockReport/BlockReport.html">Block / Report</a></li>
         <li style="float:right"><a href="../Login/Login.html">Log Out</a></li>
       </ul>
     </div>
 
-    <h1>This page will contain:</h1><br>
-    <hr>
-    <ul>
-      <li>A search bar for all users</li>
-      <li>A search button</li>
-      <li>A list of all users which is narrowed down based on the search bar</li>
-      <li>A box containing your conversation with that user</li>
-      <li>A text box at the bottom of that box where you can write a message to send</li>
-      <li>A send button</li>
-    </ul>
+    <br>
 
-</body>
+  </body>
+
 </html>

@@ -20,34 +20,38 @@
         </ul>
       </div>
 
+      <br>
+
       <div class=profile>
         <ul>
-          <li><img src="https://tinyurl.com/yc2bogxa" height="175" width="175"</li>
-          <li><input type="button" id="SelectPP" value="Upload new profile picture"></li>
-          <li>Matt Cocklin</li>
-          <li>mnc2603@gmail.com</li>
-          <li>18</li>
-          <li>England</li>
-          <li><a href="">View Friends</a></li>
+          <li id="imgProfilePic"><img src="" height="175" width="175"></li>
+          <li id="btnSelectProilePic"><input type="button" id="SelectPP" value="Upload new profile picture"></li>
+          <hr><li id="txtName">first name</li>
+          <hr><li id="txtEmail">mnc2603@gmail.com</li>
+          <hr><li id="txtAge">18</li>
+          <hr><li id="txtCountry">England</li>
+          <hr><li><a href="#">View Friends</a></li>
         </ul>
       </div>
 
       <div class="page" style="margin-left: 200px;">
-        <div class="CreatePost">
+
+        <form id="frmCreatePost" class="CreatePost" method="post">
+          <h1>Create a post...</h1>
+          <textarea id="txtPostBody" rows="5" placeholder="Create a post..."></textarea>
+          <br><input style="float: right" type="submit" id="btnPost" value="Post">
+        </form>
+
+        <br><br><hr>
+
+        <div class="wallPost">
           <ul>
-            <li><h1>Write a post...</h1></li>
-            <li><textarea rows=5 placeholder="Write your post here..."></textarea></li>
-            <li><input type="button" id="btnPost" value="post"></li>
+            <li><img src="" height="35" width="35"> user's name</li>
+            <li>
+              <p id="postText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <hr>
+            </li>
           </ul>
         </div>
-        <hr>
-            <div class="Post">
-              <ul>
-                <li><img src="https://tinyurl.com/yc2bogxa" height="25px" width="25px"> Matt Cocklin </li>
-                <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></li>
-                <li><input type="button" id="btnlike" value="Like"></li>
-            </div>
-    </div>
-  </body>
 
 </html>
