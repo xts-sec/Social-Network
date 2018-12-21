@@ -1,3 +1,3 @@
 function login(){
-  window.location = "../CreateWallPost/CreateWallPost.html"
+    window.location = "../CreateWallPost/CreateWallPost.html"
 }

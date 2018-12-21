@@ -17,6 +17,7 @@ ul{
   display: inline;
   float: left
 }
+
 .nav ul li a{
   display: block;
   color: white;
@@ -59,7 +60,7 @@ ul{
 
 .convo {
     max-height: 70vh;
-    width: 70vh;
+    width: 70vw;
     border: 3px solid deepskyblue;
     float: right;
     margin-right: 50px;
@@ -83,7 +84,7 @@ ul{
 .msgBody {
     margin: 5px;
     border: 1px solid deepskyblue;
-    width: 50vh;
+    width: 50vw;
     height: auto;
 }
 

@@ -1,5 +1,6 @@
 body{
   font-family: sans-serif;
+    text-align: center;
 }
 
 ul{
@@ -29,4 +30,25 @@ ul{
 .nav ul li a:hover{
   border: 3px solid black;
   color: black;
+}
+
+.userlist {
+    border: solid 5px deepskyblue;
+    height: 88vh;
+    overflow-y: scroll;
+}
+
+.userlist ul li img, p {
+    display: inline-block;
+    margin: 5px;
+}
+
+#btnBlock {
+    background-color: orange;
+    color: white;
+} 
+
+#btnReport {
+    background-color: red;
+    color: white;
 }
