@@ -1,0 +1,54 @@
+body{
+  font-family: sans-serif;
+    text-align: center;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav ul{
+    background-color: deepskyblue;
+}
+
+.nav ul li{
+  display: inline;
+  float: left
+}
+.nav ul li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: 3px solid deepskyblue;
+}
+
+.nav ul li a:hover{
+  border: 3px solid black;
+  color: black;
+}
+
+.userlist {
+    border: solid 5px deepskyblue;
+    height: 88vh;
+    overflow-y: scroll;
+}
+
+.userlist ul li img, p {
+    display: inline-block;
+    margin: 5px;
+}
+
+#btnBlock {
+    background-color: orange;
+    color: white;
+}
+
+#btnReport {
+    background-color: red;
+    color: white;
+}
