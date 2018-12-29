@@ -1,48 +1,11 @@
-body{
-  font-family: sans-serif;
-}
-
-ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-.nav ul{
-    background-color: deepskyblue;
-}
-
-.nav ul li{
-  display: inline;
-  float: left
-}
-
-.nav ul li a{
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  border: 3px solid deepskyblue;
-}
-
-.nav ul li a:hover{
-  border: 3px solid black;
-  color: black;
-}
-
-.page {
-   margin: 5px
-}
-
 .friendslist{
     height: auto;
     max-height: 70vh;
-    width: 175px;
-    border: 3px solid deepskyblue;
-    text-align: center;    
+    width: 10%;
+    border: 1px solid white;
+    text-align: center;
     float: left;
+    margin: 5px;
 }
 
 .friendslist ul {
@@ -55,20 +18,20 @@ ul{
 
 .friendslist ul li a{
     text-decoration: none;
-    color: black;
 }
 
 .convo {
-    max-height: 70vh;
-    width: 70vw;
-    border: 3px solid deepskyblue;
+    max-height: 90%;
+    width: 85%;
+    border: 1px solid white;
     float: right;
     margin-right: 50px;
 }
 
 .convo form {
-    width: 60vh;
+    width: 85%;
     margin: 5px;
+    float: right;
 }
 
 .message img {
@@ -76,24 +39,35 @@ ul{
     margin: 5px;
 }
 
-.message p {
-    display: inline;
-    margin: 2px;
+.convo .sent p, .convo .recieved p {
+    margin: 10px;
 }
 
 .msgBody {
     margin: 5px;
-    border: 1px solid deepskyblue;
     width: 50vw;
+    text-align: left;
     height: auto;
 }
 
 .sent {
-    float: right;
     display: block;
+    background-color: #457;
+    text-align: right;
 }
 
 .recieved {
-    float: left;
     display: block;
+    background-color: #124;
+}
+
+.sent .message p {
+  float: right;
+}
+#txtMessage {
+  width: 80%;
+}
+
+#senderName {
+  color: #DDD;
 }

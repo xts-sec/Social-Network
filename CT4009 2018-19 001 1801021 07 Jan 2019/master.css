@@ -1,0 +1,50 @@
+body{
+	font-family: sans-serif;
+	background-color: #235;
+	color: white;
+}
+input{
+	margin: 5px;
+	background-color: #235;
+	color: white;
+}
+
+input::placeholder{
+	color: white;
+}
+
+h1, h6 {
+	color: deepskyblue;
+}
+
+a {
+	color: white;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav ul{
+    background-color: #457;
+}
+
+.nav ul li{
+  display: inline;
+  float: left
+}
+.nav ul li a{
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: 2px solid white;
+}
+
+.nav ul li a:hover{
+  border-color: black;
+	color: black;
+}

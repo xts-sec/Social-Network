@@ -1,17 +1,15 @@
 <!doctype html>
 
 <html lang="en">
-
-    <head>
+  <head>
     <meta charset="utf-8">
     <title>Message</title>
     <meta name="description" content="Allows users to send messages to other users">
     <meta name="author" content="Matt Cocklin">
+    <link rel="stylesheet" href="../../master.css">
     <link rel="stylesheet" href="Message.css">
   </head>
-    
-    <body>
-      
+  <body>
     <div class="nav">
       <ul>
         <li><a href="../CreateWallPost/CreateWallPost.html">Create Post</a></li>
@@ -21,112 +19,30 @@
       </ul>
     </div>
     <br>
-      
-    <div class="page">
-        
-        <div class="friendslist" >
-            <ul>                
-              <li><a href="">friends name</a></li>
-              <li><a href="">friends name</a></li>
-              <li><a href="">friends name</a></li>
-              <li><a href="">friends name</a></li>
-              <li><a href="">friends name</a></li>
-              <li><a href="">friends name</a></li>
-              <li><a href="">friends name</a></li>
-              <li><a href="">friends name</a></li>
-              <li><a href="">friends name</a></li>
-              <li><a href="">friends name</a></li>
-              <li><a href="">friends name</a></li>
-              <li><a href="">friends name</a></li>
-              <li><a href="">friends name</a></li>
-              <li><a href="">friends name</a></li>
-              <li><a href="">friends name</a></li>
-              <li><a href="">friends name</a></li>
-              <li><a href="">friends name</a></li>
-              <li><a href="">friends name</a></li>
-              <li><a href="">friends name</a></li>
-              <li><a href="">friends name</a></li>
-              <li><a href="">friends name</a></li>         
-            </ul>            
-        </div>
-        
-        <div class="convo">
-            <ul>
-                <li>
-                    <div class="sent">
-                        <div class = "message">
-                            <img src="" height=25, width=25>
-                            <p id=senderName>Sender's name</p></br>
-                            <div class="msgBody">
-                                <p>Hey! How are you?? :)</p>
-                            </div>
-                        </div>
-                    </div>            
-                </li>
-                <li>
-                    <div class="recieved">
-                        <div class = "message">
-                            <img src="" height=25, width=25>
-                            <p id=senderName>Sender's name</p></br>
-                            <div class="msgBody">
-                                <p>Im good thanks!</p>
-                            </div>
-                        </div>
-                    </div>         
-                </li>
-                <li>
-                    <div class="sent">
-                        <div class = "message">
-                            <img src="" height=25, width=25>
-                            <p id=senderName>Sender's name</p></br>
-                            <div class="msgBody">
-                                <p>Hey! How are you?? :)</p>
-                            </div>
-                        </div>
-                    </div>            
-                </li>
-                <li>
-                    <div class="recieved">
-                        <div class = "message">
-                            <img src="" height=25, width=25>
-                            <p id=senderName>Sender's name</p></br>
-                            <div class="msgBody">
-                                <p>Im good thanks!</p>
-                            </div>
-                        </div>
-                    </div>         
-                </li>
-                <li>
-                    <div class="sent">
-                        <div class = "message">
-                            <img src="" height=25, width=25>
-                            <p id=senderName>Sender's name</p></br>
-                            <div class="msgBody">
-                                <p>Hey! How are you?? :)</p>
-                            </div>
-                        </div>
-                    </div>            
-                </li>
-                <li>
-                    <div class="recieved">
-                        <div class = "message">
-                            <img src="" height=25, width=25>
-                            <p id=senderName>Sender's name</p></br>
-                            <div class="msgBody">
-                                <p>Im good thanks!</p>
-                            </div>
-                        </div>
-                    </div>         
-                </li>
-            </ul>
-            <form id="frmCreateMessage">
-            <input style="width: 50vh" placeholder="Compose a message..." type="text" id="txtMessage" required>
-            <input type="button" id="btnRegister" value="Send" onclick="sendMessage()">
-        </form>
-            </div>
-
-        </div>
-
-    </body>
-
+    <div class="friendslist" >
+      <ul>
+        <li><a href="#">friends name</a></li>
+        <li><a href="#">friends name</a></li>
+        <li><a href="#">friends name</a></li>
+      </ul>
+    </div>
+    <div class="convo">
+      <ul>
+        <li>
+          <div class="recieved">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </li>
+        <li>
+          <div class = "sent">
+            <p>Cool strory buddy</p>
+          </div>
+        </li>
+      </ul>
+      <form id="frmCreateMessage">
+        <input type="text" id="txtMessage"  placeholder="Compose a message..." required>
+        <input type="button" id="btnSend" value="Send" onclick="sendMessage()">
+      </form>
+    </div>
+  </body>
 </html>
