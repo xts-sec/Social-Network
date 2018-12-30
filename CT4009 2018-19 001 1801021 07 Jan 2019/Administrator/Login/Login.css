@@ -1,17 +1,10 @@
 body{
-	font-family: sans-serif;
 	text-align: center;
 	font-size: 2rem;
 }
 input{
-	font-size: 2rem;
+  font-size: 2rem;
 	margin: 5px;
 	width: 30rem;
-}
-input button{
-	font-weight: bold;
-}
-
-h1, h6 {
-	color: deepskyblue;
+  font-weight: bold;
 }
