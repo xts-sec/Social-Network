@@ -10,19 +10,22 @@
     <link rel="stylesheet" href="../../master.css">
     <link rel="stylesheet" href="Register.css">
     <script src="Register.js" charset="utf-8"></script>
+    <script src="RegisterDAO.js" charset="utf-8"></script>
+    <script src="../../lib/indexeddb.js" charset="utf-8"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
   </head>
 
   <body>
-    <form id="frmLogin" method="post">
-      <h1>Register with Email, It's free!</h1><br/>
-      <input placeholder="FirstName" type="text" id="txtFirstName" required><br>
-      <input placeholder="LastName" type="text" id="txtLastName" required><br>
+    <form id="frmRegister" method="post">
+      <h1>Register with Email. It's free!</h1><br/>
+      <input placeholder="First Name" type="text" id="txtFirstName" required><br>
+      <input placeholder="Last Name" type="text" id="txtLastName" required><br>
       <input placeholder="Country" type="text" id="txtCountry" required><br>
       <input placeholder="Age" type="number" id="numAge" required><br>
       <input placeholder="Email" type="email" id="txtEmail" required><br>
       <input placeholder="Password" type="password" id="txtPassword" required><br>
-      <input placeholder="ConfirmPassword" type="password" id="txtConfirmPassword" required><br><br>
-      <input type="button" id="btnRegister" value="Register" onclick="register()">
+      <input placeholder="Confirm Password" type="password" id="txtConfirmPassword" required><br><br>
+      <input type="submit" id="btnRegister" value="Register">
     </form>
     <h6>Already have an account? <a href="../Login/Login.html">Log in</a></h6>
   </body>
