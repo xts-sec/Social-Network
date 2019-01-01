@@ -111,7 +111,6 @@ function selectAll(successCallback) {
 function insertOne(data, successCallback) {
   var transaction = db.transaction([currObjectStoreName], IDBTransaction.READ_WRITE || 'readwrite'),
     objectStore, request, lastID;
-
   objectStore = transaction.objectStore(currObjectStoreName);
   request = objectStore.add(data);
   request.onsuccess = function(event) {

@@ -9,14 +9,14 @@
     <meta name="author" content="Matt Cocklin">
     <link rel="stylesheet" href="../../master.css">
     <link rel="stylesheet" href="Register.css">
-    <script src="Register.js" charset="utf-8"></script>
-    <script src="RegisterDAO.js" charset="utf-8"></script>
     <script src="../../lib/indexeddb.js" charset="utf-8"></script>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="Register.js" charset="utf-8"></script>
+    <script src="RegisterDAO.js" charset="utf-8"></script>
   </head>
 
   <body>
-    <form id="frmRegister" method="post">
+    <form id="frmRegister" onsubmit="validate()">
       <h1>Register with Email. It's free!</h1><br/>
       <input placeholder="First Name" type="text" id="txtFirstName" required><br>
       <input placeholder="Last Name" type="text" id="txtLastName" required><br>

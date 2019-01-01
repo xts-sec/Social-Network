@@ -1,15 +1,16 @@
 function saveRegistrationData(){
   const userData = {
-    FirstName: $("#txtFirstName").value,
-    LastName: $("#txtLastName").value,
-    Country: $("#txtCountry").value,
-    Age: $("#numAge").value,
-    Email: $("#txtEmail").value,
-    Password: $("#txtPassword").value,
+    firstName: $("#txtFirstName").val(),
+    lastName: $("#txtLastName").val(),
+    country: $("#txtCountry").val(),
+    age: $("#numAge").val(),
+    email: $("#txtEmail").val(),
+    password: $("#txtPassword").val(),
+    picPath: "",
+    blockedUsers: [""]
   };
 
   insertOne(userData, function(lastID) {
-    event.preventDefault();
     return false;
   });
 };
