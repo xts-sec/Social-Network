@@ -22,16 +22,16 @@ function publish(id, content, time){
       }
       $("#postList").append("<li>" + name + " " + time + "<br><br>" + content + "<hr></li>");
     })
+    $("#txtPostBody").val("");
   })
 }
 
 function savePost(){
-  alert("saaaaave");
   event.preventDefault();
   setDatabaseName('dbUsers', ['UsersObjectStore', 'PostsObjectStore', 'MessagesObjectStore']);
 	setCurrObjectStoreName('PostsObjectStore');
 	startDB(function () {
-    alert("it has begun");
     savePostData();
+    publish(sessionStorage.getItem("userID"), $("#txtPostBody").val(), new Date().toLocaleString());
 	}, function () {});
 }

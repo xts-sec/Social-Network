@@ -17,15 +17,10 @@ function loadPostData(){
 }
 
 function savePostData(){
-  alert("saving");
   var posterID, content, time;
-  alert("1");
   posterID = sessionStorage.getItem("userID");
-  alert("2");
   content = $("#txtPostBody").val();
-  alert("3");
   console.log("Saving this: " + content);
-  alert("4");
   time = new Date().toLocaleString();
 
   postData = {
@@ -33,9 +28,7 @@ function savePostData(){
     content: content,
     time: time
   }
-  alert("5");
   insertOne(postData, function(lastID) {
     return false;
   });
-  alert("6");
 }
