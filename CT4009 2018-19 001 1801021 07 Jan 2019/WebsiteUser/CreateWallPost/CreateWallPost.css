@@ -1,36 +1,10 @@
-
-.profile ul{
-  border: 1px solid white;
-  width: 185px;
-  text-align: center;
-  display: inline;
-  float: left;
-}
-
-.profile ul li {
-  margin: 5px;
-  width: 175px;
-}
-
-.page{
-  width: 90%;
-}
-
-.CreatePost{
-  width: inherit;
-}
-
-.CreatePost h1{
-  color: deepskyblue;
-}
-
-.CreatePost textarea{
+#txtPostBody{
   width: 100%;
   background-color: #235;
   color: white;
 }
 
-.CreatePost textarea::placeholder {
+#txtPostBody::placeholder {
   color: #DDD;
 }
 
@@ -42,8 +16,4 @@
 
 .wallPost ul li{
   margin: 3px;
-}
-
-.wallPost p{
-  width: 90%;
 }
