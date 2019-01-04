@@ -1,7 +1,13 @@
 
 function validate(){
   event.preventDefault();
-  register();
+  var passwordsMatch = false;
+  var emailUnique = true;
+  if($("#txtPassword").val() == $("#txtConfirmPassword").val()){
+    register();
+  } else {
+    alert("Passwords do not match. Please try again.")
+  }
 }
 
 function register(){

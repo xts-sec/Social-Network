@@ -6,8 +6,8 @@ function saveRegistrationData(){
     age: $("#numAge").val(),
     email: $("#txtEmail").val(),
     password: $("#txtPassword").val(),
-    picPath: "",
-    blockedUsers: [""]
+    blockedUsers: [],
+    friends: []
   };
 
   insertOne(userData, function(lastID) {
