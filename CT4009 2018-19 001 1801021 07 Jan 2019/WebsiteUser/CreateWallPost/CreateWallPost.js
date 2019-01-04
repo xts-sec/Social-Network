@@ -20,7 +20,7 @@ function publish(id, content, time){
           name = results[i].firstName + " " + results[i].lastName;
         }
       }
-      $("#postList").append("<li>" + name + " " + time + "<br><br>" + content + "<hr></li>");
+      $("#postList").prepend("<li><p style='color: deepskyblue;'>- <b>" + name + "</b> @ " + time + "</p>" + content + "<hr></li>");
     })
     $("#txtPostBody").val("");
   })

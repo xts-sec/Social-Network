@@ -2,7 +2,7 @@ function loadPostData(){
   return selectAll(function(results) {
     console.log(results);
     if (!results.length){
-      alert("no posts")
+      $("#postList").append('<p style="text-align: center"> No posts yet, be the first to write one!</p>');
     } else {
       var len = results.length;
       var posterID, content, time;
