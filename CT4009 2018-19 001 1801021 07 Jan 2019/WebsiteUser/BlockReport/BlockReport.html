@@ -8,6 +8,9 @@
     <meta name="author" content="Matt Cocklin">
     <link rel="stylesheet" href="../../master.css">
     <link rel="stylesheet" href="BlockReport.css">
+    <script src="../../lib/indexeddb.js" charset="utf-8"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="BlockReport.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="nav">
@@ -19,18 +22,13 @@
       </ul>
     </div>
     <br>
-    <div class = "userlist">
-      <ul>
-        <div class  ="user">
-          <li>
-            <img src="" height=25, width=25>
-            <p id=senderName>Friend's name</p>
-            <input id="btnBlock" type="button" value="BLOCK">
-            <input id="btnReport" type="button" value="REPORT">
-            <hr>
-          </li>
-        </div>
+    <div class = "findFriend">
+      <input type="text" id="searchNames" onkeyup="searchNames()" placeholder="Search for friends...">
+      <ul id="findFriendsList">
       </ul>
     </div>
+    <hr>
+    <ul id="friends">
+    </ul>
   </body>
 </html>
