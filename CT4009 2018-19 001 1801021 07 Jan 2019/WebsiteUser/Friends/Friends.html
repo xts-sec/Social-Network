@@ -11,6 +11,7 @@
     <script src="../../lib/indexeddb.js" charset="utf-8"></script>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="Friends.js" charset="utf-8"></script>
+    <script src="FriendsDAO.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="nav">
@@ -22,13 +23,16 @@
       </ul>
     </div>
     <br>
-    <div class = "findFriend">
-      <input type="text" id="searchNames" onkeyup="searchNames()" placeholder="Search for friends...">
-      <ul id="findFriendsList">
+    <div class = "users">
+      <input type="text" id="searchUsers" onkeyup="searchNames($('#searchUsers'), $('#userList'))" placeholder="Search users...">
+      <ul id="userList">
       </ul>
     </div>
     <hr>
-    <ul id="friends">
-    </ul>
+    <div class="friends">
+      <input type="text" id="searchFriends" onkeyup="searchNames($('#searchFriends'), $('#friendList'))" placeholder="Search your friends...">
+      <ul id="friendList">
+      </ul>
+    </div>
   </body>
 </html>

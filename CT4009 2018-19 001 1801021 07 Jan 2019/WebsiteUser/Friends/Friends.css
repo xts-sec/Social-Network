@@ -1,10 +1,6 @@
-.userlist {
-    text-align: center;
-}
-
-.userlist ul li img, p {
-    display: inline-block;
+p {
     margin: 5px;
+    display: inline;
 }
 
 #btnBlock {
@@ -17,21 +13,20 @@
     color: white;
 }
 
-#searchNames {
+#searchUsers, #searchFriends   {
   width: 100%;
-  font-size: 16px;
-  margin-right: 5px;
+  font-size: 2rem;
 }
 
-#findFriendsList {
-  margin: 5px;
+#userList. #friendList {
   width: 100%;
-  background-color: #346;
   height: auto;
   max-height: 132px;
   overflow-y: scroll;
 }
 
-#findFriendsList li {
+#userList li, #friendList li {
   border: 1px solid #ddd;
+  background-color: #457;
+  margin: 5px;
 }
