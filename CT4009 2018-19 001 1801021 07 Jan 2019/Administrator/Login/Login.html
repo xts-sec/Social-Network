@@ -9,14 +9,17 @@
     <meta name="author" content="Matt Cocklin">
     <link rel="stylesheet" href="../../master.css">
     <link rel="stylesheet" href="login.css">
+    <script src="../../lib/indexeddb.js" charset="utf-8"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="login.js" charset="utf-8"></script>
+    <script src="loginDAO.js" charset="utf-8"></script>
   </head>
 
   <body>
     <form id="frmlogin" method="post">
       <h1>Enter Administrator password</h1>
       <input placeholder="Password" type="password" id="txtPassword" required><br><br>
-      <input type="submit" id="btnLogin" value="Login" onClick="login()">
+      <input type="button" id="btnLogin" value="Login" onClick="login()">
     </form>
   </body>
 
