@@ -22,73 +22,57 @@ function loadUserList(){
   setDatabaseName('dbUsers', ['UsersObjectStore', 'PostsObjectStore', 'MessagesObjectStore', 'reportsObjectStore']);
   setCurrObjectStoreName('UsersObjectStore');
   startDB(function(){
-    myFriends = getFriends();
-    selectAll(function(results){
-      var len = results.length;
-      if(myFriends){
-        for(i = 0; i < len; i++){
-          if(myFriends.contains(results[i].id)){
-            $("#friendList").append("<li><p>" + name + "</p><input type='button' value='Remove As Friend' onclick='removeAsFriend(" + results[i].id + ")'></li>");
-          } else {
-            $("#userList").append("<li><p>" + name + "</p><input type='button' value='Add As Friend' onclick='addAsFriend(" + results[i].id + ")'></li>");
-          }
-        }
-      } else {
-        for(i = 0; i < len; i++){
-          if(results[i].id != sessionStorage.getItem("userID")){
-            var name = results[i].firstName + " " + results[i].lastName;
-            $("#userList").append("<li><p>" + name + "</p><input type='button' value='Add Friend' onclick='addAsFriend(" + results[i].id + ")'></li>");
-          }
-        }
-      }
-    })
+    getFriends();
   }, function(){});
 }
 
 function addAsFriend(id){
-  myId = sessionStorage.getItem("UserID");
+  myId = sessionStorage.getItem("userID");
   setDatabaseName('dbUsers', ['UsersObjectStore', 'PostsObjectStore', 'MessagesObjectStore', 'reportsObjectStore']);
   setCurrObjectStoreName('UsersObjectStore');
   startDB(function(){
     //adds current user to selected user's friends
-    var result = selectOne(id, function(result){
-      return result;
+    selectOne(id, function(result){
+      result.friends.push(myId);
+      updateOne(result, function(lastID){
+        return lastID;
+      })
     })
-    if(result.friends){
-      result.friends.append(myId);
-    } else {
-      result.friends = [myId]
-    }
     //adds selected user to current user's friends
-    var result = selectOne(myId, function(result){
-      return result;
+    selectOne(myId, function(result){
+      result.friends.push(id);
+      updateOne(result, function(lastID){
+        return lastID;
+      })
     })
-    result.friends.append(id);
-  }, function(){});
+  })
 }
 
+
 function removeAsFriend(id){
-  myId = sessionStorage.getItem("UserID");
+  myId = sessionStorage.getItem("userID");
   setDatabaseName('dbUsers', ['UsersObjectStore', 'PostsObjectStore', 'MessagesObjectStore', 'reportsObjectStore']);
   setCurrObjectStoreName('UsersObjectStore');
   startDB(function(){
     //removes current user from selected user's friends
-    var result = selectOne(id, function(result){
-      return result;
-    })
-    for( var i = 0; i < array.length-1; i++){
-      if ( array[i] === myId) {
-        arr.splice(i, 1);
+    selectOne(id, function(result){
+      var index = result.friends.indexOf(myId);
+      if(index > -1){
+        result.friends.splice(index, 1);
       }
-    }
+      updateOne(result, function(lastID){
+        return lastID;
+      })
+    })
     //removes selected user from current user's friends
-    var result = selectOne(myId, function(result){
-      return result;
-    })
-    for( var i = 0; i < array.length-1; i++){
-      if ( array[i] === id) {
-        arr.splice(i, 1);
+    selectOne(myId, function(result){
+      var index = result.friends.indexOf(id);
+      if(index > -1){
+        result.friends.splice(index, 1);
       }
-    }
+      updateOne(result, function(lastID){
+        return lastID;
+      })
+    })
   }, function(){});
 }
