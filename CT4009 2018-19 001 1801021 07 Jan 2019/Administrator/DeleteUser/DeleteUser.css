@@ -1,1 +1,23 @@
 
+p {
+    margin: 5px;
+    display: inline;
+}
+
+#searchUsers, #searchFriends   {
+  width: 100%;
+  font-size: 2rem;
+}
+
+#userList  {
+  width: 100%;
+  height: auto;
+  max-height: 132px;
+  overflow-y: scroll;
+}
+
+#userList li {
+  border: 1px solid #ddd;
+  background-color: #457;
+  margin: 5px;
+}

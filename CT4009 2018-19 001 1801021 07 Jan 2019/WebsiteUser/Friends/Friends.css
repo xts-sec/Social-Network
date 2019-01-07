@@ -3,22 +3,12 @@ p {
     display: inline;
 }
 
-#btnBlock {
-    background-color: orange;
-    color: white;
-}
-
-#btnReport {
-    background-color: red;
-    color: white;
-}
-
 #searchUsers, #searchFriends   {
   width: 100%;
   font-size: 2rem;
 }
 
-#userList. #friendList {
+#userList, #friendList {
   width: 100%;
   height: auto;
   max-height: 132px;
