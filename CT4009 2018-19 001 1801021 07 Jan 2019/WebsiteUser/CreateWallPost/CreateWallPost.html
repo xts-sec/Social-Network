@@ -1,24 +1,24 @@
 <!doctype html>
 
 <html lang="en">
-//page metadata
+<!page metadata>
   <head>
     <meta charset="utf-8">
     <title>Create Wall Post</title>
     <meta name="description" content="Allows users to create posts for their wall">
     <meta name="author" content="Matt Cocklin">
-    //stylesheet references
+    <!stylesheet references>
     <link rel="stylesheet" href="../../master.css">
     <link rel="stylesheet" href="CreateWallPost.css">
-    //javascript references
+    <!javascript references>
     <script src="../../lib/indexeddb.js" charset="utf-8"></script>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="CreateWallPostDAO.js" charset="utf-8"></script>
     <script src="CreateWallPost.js" charset="utf-8"></script>
   </head>
-  //main body of page
+  <!main body of page>
   <body>
-    //nav bar
+    <!nav bar>
     <div class=nav>
       <ul>
         <li><a href="../CreateWallPost/CreateWallPost.html">Create Post</a></li>
@@ -27,19 +27,19 @@
       </ul>
     </div>
     <br>
-    //main page
+    <!main page>
     <div class="page">
-      //form to make posts
+      <!form to make posts>
       <form id="frmCreatePost" class="CreatePost" method="post" onsubmit="savePost()">
         <h1>Create a post...</h1>
-        //box to write post
+        <!box to write post>
         <textarea id="txtPostBody" rows="5" placeholder="Create a post..."></textarea>
-        //button to post
+        <!button to post>
         <br><input style="float: right" type="submit" id="btnPost" value="Post">
       </form>
-      //spaces the page properly
+      <!spaces the page properly>
       <br><br><hr>
-      //wall posts (auto populated with js)
+      <!wall posts (auto populated with js)>
       <div class="wallPost">
         <ul id="postList">
         </ul>

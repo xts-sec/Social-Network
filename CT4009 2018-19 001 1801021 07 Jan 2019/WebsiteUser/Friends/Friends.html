@@ -1,24 +1,24 @@
 <!doctype html>
 
 <html lang="en">
-//page metadata
+<!page metadata>
   <head>
     <meta charset="utf-8">
     <title>Friends</title>
     <meta name="description" content="Allows users to block and report other users">
     <meta name="author" content="Matt Cocklin">
-    //stylesheet references
+    <!stylesheet references>
     <link rel="stylesheet" href="../../master.css">
     <link rel="stylesheet" href="Friends.css">
-    //javascript references
+    <!javascript references>
     <script src="../../lib/indexeddb.js" charset="utf-8"></script>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="Friends.js" charset="utf-8"></script>
     <script src="FriendsDAO.js" charset="utf-8"></script>
   </head>
-  //main body of page
+  <!main body of page>
   <body>
-    //nav bar
+    <!nav bar>
     <div class="nav">
       <ul>
         <li><a href="../CreateWallPost/CreateWallPost.html">Create Post</a></li>
@@ -27,14 +27,14 @@
       </ul>
     </div>
     <br>
-    //searchable users list (autopopulated with js)
+    <!searchable users list (autopopulated with js)>
     <div class = "users">
       <input type="text" id="searchUsers" onkeyup="searchNames($('#searchUsers'), $('#userList'))" placeholder="Search users...">
       <ul id="userList">
       </ul>
     </div>
     <hr>
-    //searchable friends list (autopopulated with js)
+    <!searchable friends list (autopopulated with js)>
     <div class="friends">
       <input type="text" id="searchFriends" onkeyup="searchNames($('#searchFriends'), $('#friendList'))" placeholder="Search your friends...">
       <ul id="friendList">
