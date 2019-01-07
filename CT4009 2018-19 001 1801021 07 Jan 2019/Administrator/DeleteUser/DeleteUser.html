@@ -2,18 +2,23 @@
 
 <html lang="en">
   <head>
+    //page metadata
     <meta charset="utf-8">
     <title>ViewAllReportings</title>
     <meta name="description" content="Allows admin to view all reportings by users">
     <meta name="author" content="Matt Cocklin">
+    //stylesheet references
     <link rel="stylesheet" href="../../master.css">
     <link rel="stylesheet" href="DeleteUser.css">
+    //javascript references
     <script src="../../lib/indexeddb.js" charset="utf-8"></script>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="DeleteUserDAO.js" charset="utf-8"></script>
     <script src="DeleteUser.js" charset="utf-8"></script>
   </head>
+  //main body of page
   <body>
+    //nav bar
     <div class="nav">
       <ul>
         <li><a href="../ViewAllReportings/ViewAllReportings.html">View All Reportings</a></li>
@@ -23,6 +28,7 @@
       </ul>
     </div>
     <br>
+    //searchable list of users, populated with js
     <div class = "users">
       <input type="text" id="searchUsers" onkeyup="searchNames($('#searchUsers'), $('#userList'))" placeholder="Search users...">
       <ul id="userList">

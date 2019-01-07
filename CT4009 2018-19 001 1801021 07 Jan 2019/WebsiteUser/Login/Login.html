@@ -1,28 +1,33 @@
 <!doctype html>
 
 <html lang="en">
-
+  //page metadata
   <head>
     <meta charset="utf-8">
     <title>Login</title>
     <meta name="description" content="Allows users to login to the site">
     <meta name="author" content="Matt Cocklin">
+    //stylesheet references
     <link rel="stylesheet" href="../../master.css">
     <link rel="stylesheet" href="login.css">
+    //javascript references
     <script src="../../lib/indexeddb.js" charset="utf-8"></script>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="login.js" charset="utf-8"></script>
     <script src="loginDAO.js" charset="utf-8"></script>
   </head>
-
+  //main body of page
   <body>
+    //login form
     <form id="frmlogin" onsubmit="login()">
       <h1>Login with Email</h1>
       <input placeholder="Email" type="email" id="txtEmail" required><br>
       <input placeholder="Password" type="password" id="txtPassword" required><br><br>
       <input type="submit" id="btnLogin" value="Login">
     </form>
+    //registration link
     <h6>Don't have an account? <a href="../Register/Register.html">Register</a></h6>
+    //link to admin login page
     <a id="adminLink" href="../../Administrator/Login/Login.html">administrator login</a>
   </body>
 

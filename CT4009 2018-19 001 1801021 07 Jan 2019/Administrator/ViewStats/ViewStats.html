@@ -1,19 +1,24 @@
 <!doctype html>
 
 <html lang="en">
+//page metadata
   <head>
     <meta charset="utf-8">
     <title>ViewAllReportings</title>
     <meta name="description" content="Allows admin to view the stats for the site">
     <meta name="author" content="Matt Cocklin">
+    //stylesheet references
     <link rel="stylesheet" href="../../master.css">
     <link rel="stylesheet" href="ViewStats.css">
+    //javascript references
     <script src="../../lib/indexeddb.js" charset="utf-8"></script>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="ViewStats.js" charset="utf-8"></script>
     <script src="ViewStatsDAO.js" charset="utf-8"></script>
   </head>
+  //main body of page
   <body>
+    //nav bar
     <div class="nav">
       <ul>
         <li><a href="../ViewAllReportings/ViewAllReportings.html">View All Reportings</a></li>
@@ -23,6 +28,7 @@
       </ul>
     </div>
     <br>
+    //stats section (auto populated with js)
     <h1>Statistics</h1><hr>
     <ul id="statsList">
     </ul>
